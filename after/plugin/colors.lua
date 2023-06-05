@@ -4,7 +4,7 @@ require("catppuccin").setup({
         light = "macchiato",
         dark = "mocha",
     },
-    transparent_background = true, 
+    transparent_background = true 
 })
 
 function ColorMyPencils(color) 

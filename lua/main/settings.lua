@@ -13,3 +13,4 @@ vim.opt.autoread = true
 vim.opt.cursorline = true
 vim.cmd [[ set noswapfile ]]
 vim.wo.number = true
+
