@@ -5,7 +5,7 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.shiftround = true 
 vim.opt.expandtab = true
-vim.api.nvim_set_keymap("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pv", ":Ex<CR>")
 
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
