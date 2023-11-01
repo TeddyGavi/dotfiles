@@ -39,3 +39,4 @@ vim.opt.updatetime = 50
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
 
+vim.cmd.colorscheme "catppuccin-macchiato"
