@@ -1,8 +1,0 @@
-require("keymaps")
-require("settings")
-require("lazy-config")
-require("whichKey")
-require("bufferline-config")
-require("lualine-config")
-require("hop-config")
-require("nvim-tree-config")
