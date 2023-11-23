@@ -16,7 +16,6 @@ end
 config.font = wezterm.font("JetBrains Mono")
 config.window_background_opacity = 0.9
 config.color_scheme = "catppuccin-mocha"
-config.default_cursor_style = "BlinkingBlock"
 -- Tab Bar Options
 config.use_fancy_tab_bar = true
 config.enable_tab_bar = true
