@@ -1,3 +1,4 @@
+.DS_STORE
 lazy-lock.json/
 nvim/tt.*
 nvim/.tests
