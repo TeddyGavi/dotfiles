@@ -3,6 +3,6 @@ A minimal neovim configuration.
 
 Requires NeoVim 0.12 or later
 
-Taken from:
+ref:
 radleylewis/nvim-lite/master/init.lua
 
