@@ -1,0 +1,140 @@
+return {
+  "neovim/nvim-lspconfig",
+  opts = {
+    inlay_hints = { enabled = false },
+  --   servers = {
+  --     vtsls = {
+  --       enabled = false,
+  --     },
+  --     ts_ls = {
+  --       enabled = true,
+  --       root_dir = function(fname)
+  --         -- Prefer the app jsconfig.json / tsconfig.json
+  --         local root = util.root_pattern("jsconfig.json", "tsconfig.json")(fname)
+  --         if not root then
+  --           -- fallback to repo root if needed
+  --           root = util.find_git_ancestor(fname)
+  --         end
+  --         return root
+  --       end,
+  --       -- Override init options for tsserver
+  --       init_options = {
+  --         hostInfo = "neovim",
+  --         preferences = {
+  --           includeCompletionsForModuleExports = true,
+  --           includeCompletionsWithInsertText = true,
+  --         },
+  --       },
+  --       -- Provide the path mappings so tsserver resolves @Components, @Utilities, etc
+  --       -- purely from your app-level config
+  --       on_new_config = function(new_config)
+  --         new_config.cmd_env = {
+  --           NODE_PATH = vim.fn.expand(
+  --             vim.fn.getcwd()
+  --               .. "/node_modules:"
+  --               .. vim.fn.expand("~/path/to/mono-repo/packages/components/src")
+  --               .. ":"
+  --               .. vim.fn.expand("~/path/to/mono-repo/packages/utilities/src")
+  --           ),
+  --         }
+  --       end,
+  --     },
+  --   },
+    -- servers = {
+    --     eslint = {},
+    --     pyright = {
+    --       settings = {
+    --         python = {
+    --           pythonPath = "./venv/bin/python", -- Use the correct path to your venv
+    --         },
+    --       },
+    --     },
+    --     -- ["sonarlint-language-server"] = {},
+    --   },
+    --   setup = {
+    --     eslint = function()
+    --       require("lazyvim.util").lsp.on_attach(function(client)
+    --         if client.name == "eslint" then
+    --           client.server_capabilities.documentFormattingProvider = true
+    --         elseif client.name == "tsserver" then
+    --           client.server_capabilities.documentFormattingProvider = false
+    --         end
+    --       end)
+    --     end,
+    --
+    --     pyright = function()
+    --       require("lazyvim.util").lsp.on_attach(function(client)
+    --         if client.name == "pyright" then
+    --           client.server_capabilities.documentFormattingProvider = true
+    --         end
+    --       end)
+    --     end,
+    -- ["sonarlint-language-server"] = function()
+    --   require("lazyvim.util").lsp.on_attach(function(client)
+    --     if client.name == "sonarlint-language-server" then
+    --       client.server_capabilities.documentFormattingProvider = true
+    --     end
+    --   end)
+    -- end,
+    --     },
+    --   },
+    -- }
+    -- return {
+    --   "neovim/nvim-lspconfig",
+    --   opts = {
+    --     ---@type lspconfig.options
+    --     servers = {
+    --       eslint = {
+    --         settings = {
+    --           -- helps eslint find the eslintrc when it's placed in a subfolder instead of the cwd root
+    --           workingDirectories = { mode = "auto" },
+    --         },
+    --       },
+    --       emmet_ls = {},
+    --     },
+    --     setup = {
+    --       eslint = function()
+    --         local function get_client(buf)
+    --           return LazyVim.lsp.get_clients({ name = "eslint", bufnr = buf })[1]
+    --         end
+    --
+    --       local formatter = LazyVim.lsp.formatter({
+    --         name = "eslint: lsp",
+    --         primary = false,
+    --         priority = 200,
+    --         filter = "eslint",
+    --       })
+    --       end,
+    --       --
+    --       --   -- Use EslintFixAll on Neovim < 0.10.0
+    --       --   if not pcall(require, "vim.lsp._dynamic") then
+    --       --     formatter.name = "eslint: EslintFixAll"
+    --       --     formatter.sources = function(buf)
+    --       --       local client = get_client(buf)
+    --       --       return client and { "eslint" } or {}
+    --       --     end
+    --       --     formatter.format = function(buf)
+    --       --       local client = get_client(buf)
+    --       --       if client then
+    --       --         local diag = vim.diagnostic.get(buf, { namespace = vim.lsp.diagnostic.get_namespace(client.id) })
+    --       --         if #diag > 0 then
+    --       --           vim.cmd("EslintFixAll")
+    --       --         end
+    --       --       end
+    --       --     end
+    --       --   end
+    --       --   -- register the formatter with LazyVim
+    --       --   LazyVim.format.register(formatter)
+    --       -- end,
+    --
+    --       -- tsserver = function(_, opts)
+    --       --   require("lspconfig").tsserver.setup({servers = opts})
+    --       -- end,
+    --       --
+    --       -- ["*"] = function(server, opts)
+    --       --   require("lspconfig")[server].setup(opts)
+    --       -- end,
+    --     },
+    --   },
+  },
+}

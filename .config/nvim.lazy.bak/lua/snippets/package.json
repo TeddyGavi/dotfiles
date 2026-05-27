@@ -1,0 +1,31 @@
+{
+  "storyOutline": {
+    "prefix": "storyOutline",
+    "body": [
+      "export const Default = ConstructStory();",
+      "",
+      "const meta = {",
+      "  title: 'Components/${1:ComponentName}',",
+      "  tags: ['autodocs'],",
+      "  component: ${2:Component},",
+      "  argTypes: {",
+      "    ${3:// Add argTypes here}",
+      "  }",
+      "};",
+      "",
+      "export default meta;",
+      "",
+      "const ConstructStory = (story) => {",
+      "  return {",
+      "    ...story,",
+      "    args: {",
+      "      ...story?.args",
+      "    }",
+      "  };",
+      "};",
+      "",
+      "export const Default = ConstructStory();"
+    ],
+    "description": "A story outline template for Storybook components"
+  }
+}

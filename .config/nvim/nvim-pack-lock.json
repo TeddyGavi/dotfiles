@@ -1,0 +1,73 @@
+{
+  "plugins": {
+    "LuaSnip": {
+      "rev": "dae4f5aaa3574bd0c2b9dd20fb9542a02c10471c",
+      "src": "https://github.com/L3MON4D3/LuaSnip"
+    },
+    "blink.cmp": {
+      "rev": "4b18c32adef2898f95cdef6192cbd5796c1a332d",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "1.0.0 - 2.0.0"
+    },
+    "conform.nvim": {
+      "rev": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
+    "efmls-configs-nvim": {
+      "rev": "2dd907fe0043b95a901a9aee814f17804aa4426d",
+      "src": "https://github.com/creativenull/efmls-configs-nvim"
+    },
+    "fff.nvim": {
+      "rev": "91545f832c3aa3b36e58088e44461a071a709699",
+      "src": "https://github.com/dmtrKovalenko/fff.nvim"
+    },
+    "fzf-lua": {
+      "rev": "b2c0603216adb92c6bba81053bc996d7ae95b77a",
+      "src": "https://www.github.com/ibhagwan/fzf-lua"
+    },
+    "gitsigns.nvim": {
+      "rev": "9f3c6dd7868bcc116e9c1c1929ce063b978fa519",
+      "src": "https://www.github.com/lewis6991/gitsigns.nvim"
+    },
+    "lazygit.nvim": {
+      "rev": "a04ad0dbc725134edbee3a5eea29290976695357",
+      "src": "https://github.com/kdheepak/lazygit.nvim"
+    },
+    "mason-lspconfig.nvim": {
+      "rev": "0a3b42c3e503df87aef6d6513e13148381495c3a",
+      "src": "https://github.com/mason-org/mason-lspconfig.nvim"
+    },
+    "mason-tool-installer.nvim": {
+      "rev": "443f1ef8b5e6bf47045cb2217b6f748a223cf7dc",
+      "src": "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim"
+    },
+    "mason.nvim": {
+      "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "mini.nvim": {
+      "rev": "dbb073bd2ed4a7bb35daafc7989567f0ff1426ee",
+      "src": "https://www.github.com/echasnovski/mini.nvim"
+    },
+    "nvim-lspconfig": {
+      "rev": "5a855bcfec7973767a1a472335684bbd71d2fa2b",
+      "src": "https://www.github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-treesitter": {
+      "rev": "fcd51bbe9245aa9b79a3930ed9ac42e16e1cf33f",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "nyan.nvim": {
+      "rev": "506a43d9d1c2f12b9393c38d78c8c2d8523c5597",
+      "src": "https://github.com/abosnjakovic/nyan.nvim"
+    },
+    "oil.nvim": {
+      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "vague.nvim": {
+      "rev": "8751181a1aa431b4e8983b0a183afef5cbc08381",
+      "src": "https://github.com/vague2k/vague.nvim"
+    }
+  }
+}

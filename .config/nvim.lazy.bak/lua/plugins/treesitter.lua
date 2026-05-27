@@ -1,0 +1,76 @@
+return {
+  -- "nvim-treesitter/nvim-treesitter",
+  -- branch = "master",
+  -- build = ":TSUpdate",
+  -- lazy = vim.fn.argc(-1) == 0, -- load treesitter early when opening a file from the cmdline
+  -- cmd = { "TSUpdateSync", "TSUpdate", "TSInstall" },
+  -- keys = {
+  --   { "<c-space>", desc = "Increment Selection" },
+  --   { "<bs>", desc = "Decrement Selection", mode = "x" },
+  -- },
+  -- ---@type TSConfig
+  -- ---@diagnostic disable-next-line: missing-fields
+  -- opts = {
+  --   highlight = { enable = true },
+  --   indent = { enable = true },
+  --   autotag = { enable = true },
+  --   ensure_installed = {
+  --     "go",
+  --     "bash",
+  --     "c",
+  --     "diff",
+  --     "html",
+  --     "javascript",
+  --     "jsdoc",
+  --     "json",
+  --     "jsonc",
+  --     "lua",
+  --     "luadoc",
+  --     "luap",
+  --     "markdown",
+  --     "markdown_inline",
+  --     "python",
+  --     "query",
+  --     "regex",
+  --     "toml",
+  --     "tsx",
+  --     "typescript",
+  --     "vim",
+  --     "vimdoc",
+  --     "xml",
+  --     "yaml",
+  --   },
+  --   incremental_selection = {
+  --     enable = true,
+  --     keymaps = {
+  --       init_selection = "<C-space>",
+  --       node_incremental = "<C-space>",
+  --       scope_incremental = false,
+  --       node_decremental = "<bs>",
+  --     },
+  --   },
+  --   textobjects = {
+  --     move = {
+  --       enable = true,
+  --       goto_next_start = { ["]f"] = "@function.outer", ["]c"] = "@class.outer" },
+  --       goto_next_end = { ["]F"] = "@function.outer", ["]C"] = "@class.outer" },
+  --       goto_previous_start = { ["[f"] = "@function.outer", ["[c"] = "@class.outer" },
+  --       goto_previous_end = { ["[F"] = "@function.outer", ["[C"] = "@class.outer" },
+  --     },
+  --   },
+  -- },
+  -- ---@param opts TSConfig
+  -- config = function(_, opts)
+  --   require("nvim-treesitter").setup(opts)
+  --   vim.filetype.add({ extension = { ejs = "ejs" } })
+  --   vim.filetype.add({ extension = { hbs = "hbs" } })
+  --   vim.treesitter.language.register("html", "ejs")
+  --   vim.treesitter.language.register("html", "hbs")
+  --   vim.treesitter.language.register("javascript", "ejs")
+  --   vim.treesitter.language.register("javascript", "hbs")
+  --   vim.treesitter.language.register("embedded_template", "ejs")
+  --   vim.treesitter.language.register("embedded_template", "hbs")
+  --
+  --   vim.treesitter.language.register("markdown", "mdx")
+  -- end,
+}

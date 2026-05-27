@@ -1,0 +1,30 @@
+--  bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
+
+-- local colors = {
+--   red = "#ff5f5f",
+--   orange = "#ffaf5f",
+--   yellow = "#ffd75f",
+--   green = "#5fff87",
+--   blue = "#5fafff",
+--   purple = "#af87ff",
+--   pink = "#ff87d7",
+-- }
+--
+-- vim.api.nvim_set_hl(0, "NyanRed", { fg = colors.red })
+-- vim.api.nvim_set_hl(0, "NyanOrange", { fg = colors.orange })
+-- vim.api.nvim_set_hl(0, "NyanYellow", { fg = colors.yellow })
+-- vim.api.nvim_set_hl(0, "NyanGreen", { fg = colors.green })
+-- vim.api.nvim_set_hl(0, "NyanBlue", { fg = colors.blue })
+-- vim.api.nvim_set_hl(0, "NyanPurple", { fg = colors.purple })
+-- vim.api.nvim_set_hl(0, "NyanPink", { fg = colors.pink })
+-- vim.api.nvim_set_hl(0, "NyanCat", { fg = "#ffffff", bold = true })
+-- vim.api.nvim_set_hl(0, "NyanEmpty", { fg = "#ffffff", bold = true })
+--
+-- vim.api.nvim_set_hl(0, "NyanFade1", { fg = "#ff5f5f" }) -- red
+-- vim.api.nvim_set_hl(0, "NyanFade2", { fg = "#ffaf5f" }) -- orange
+-- vim.api.nvim_set_hl(0, "NyanFade3", { fg = "#ffd75f" }) -- yellow
+--
+-- -- far tail (pastel, still colored)
+-- vim.api.nvim_set_hl(0, "NyanFade4", { fg = "#afffd7" }) -- pastel green
+-- vim.api.nvim_set_hl(0, "NyanFade5", { fg = "#afd7ff" })

@@ -1,0 +1,42 @@
+return {
+  -- "https://gitlab.com/schrieveslaach/sonarlint.nvim",
+  -- dependencies = {
+  --   "mason/mason.nvim",
+  --   "mfussenegger/nvim-jdtls",
+  -- },
+  --
+  -- config = function(_, opts)
+  --   local sonarlint = require("sonarlint")
+  --
+  --   sonarlint.setup({
+  --     server = {
+  --       cmd = {
+  --         "sonarlint-language-server",
+  --         -- Ensure that sonarlint-language-server uses stdio channel
+  --         "-stdio",
+  --         "-analyzers",
+  --         vim.fn.expand("$MASON/share/sonarlint-analyzers/sonarcfamily.jar"),
+  --         vim.fn.expand("$MASON/share/sonarlint-analyzers/sonarjs.jar"),
+  --         vim.fn.expand("$MASON/share/sonarlint-analyzers/sonartext.jar"),
+  --         vim.fn.expand("$MASON/share/sonarlint-analyzers/sonarhtml.jar"),
+  --       },
+  --     },
+  --     filetypes = {
+  --       "html",
+  --       "js",
+  --       "javascript",
+  --       "typescript",
+  --       "javascriptreact",
+  --       "typescriptreact",
+  --     },
+  --     settings = {
+  --       sonarlint = {
+  --         rules = {
+  --           ["typescript:S7728"] = { level = "off" },
+  --           ["javascript:S7728"] = { level = "off" },
+  --         },
+  --       },
+  --     },
+  --   })
+  -- end,
+}
